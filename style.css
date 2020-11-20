@@ -34,13 +34,19 @@ a:hover{
      border-radius: 5px;
 }
 
+.btn:hover{
+     cursor: pointer;
+     opacity: 0.9;
+}
+
 .header-image-container{
-     height:40vw;
+     height:90vh;
      background-image: url("./images/main.png");
      background-size: cover;
      position: relative;
      box-shadow: 0px 10px 15px #0008;
 }
+
 .header-image-container .title{
      color: white;
      position: absolute;
@@ -93,21 +99,22 @@ a:hover{
 .header-item{
      list-style: none;
      margin: 0 15px;
-     display: inline;
+     display: inline-block;
      border: 2px solid black
 }
 
 .nav-item{
-     display: inline;
+     display: inline-block;
      margin:0 10px;
 }
 
 .image-card{
      position: relative;
-     width: 25vw;
-     height: 35vw;
+     width: 30vw;
+     height: 40vw;
      padding: 2px;
      margin: 2px 5px;
+     overflow: hidden;
 }
 
 .image-card img{
@@ -116,6 +123,7 @@ a:hover{
 }
 
 .image-card .image-data{
+     font-family: 'Geneva';
      letter-spacing: 1px;
      width: 100%;
      background-color: #0004;
@@ -123,18 +131,19 @@ a:hover{
      font-size: 18px;
      color: white;
      position: absolute;
-     bottom: 1px;
+     bottom: 10px;
      left:10px;
      transform:translateX(-10px) translateY(-10px)
 }
 
 .image-card .image-data .image-description{
-     
+     letter-spacing: 0px;
      height: 0;
      width: 0;
      overflow: hidden;
      transition:  0.25s ease-in;
-     font-size: 16px;
+     font-size: 14px;
+
 }
 
 .image-card:hover .image-data .image-description{
@@ -143,6 +152,125 @@ a:hover{
      width: fit-content;
 }
 
+.special-content-wrapper{
+     margin-top: 40px;
+     display: flex;
+     background-color: #f7f6f0;
+     padding: 5px;
+     box-shadow: 0px -5px 50px black;
+
+}
+
+
+.special-content{
+     margin-left:20px;
+     flex:1;
+     overflow: hidden;
+}
+
+.image-slider{
+     flex:3;
+}
+
+.tag{
+     text-transform: uppercase;
+     color: #2c9cd0;
+     margin-bottom: 20px;
+     font-size:18px;
+}
+
+.special-btn{
+     border:1px solid black;
+     border-radius:0px;
+     align-self: center;
+
+}
+
+.title{
+     margin:40px 0px;
+}
+
+.special-paragraph{
+     letter-spacing: 1px;
+     margin-bottom: 20px;
+}
+
+
+.slider-controller{
+     margin:40px auto;
+}
+
+.slider-controller .controller-left{
+     transform: rotate(180deg);
+}
+
+.slider-controller *{
+     font-size: 24px;
+     border:2px solid #289eec55;
+     display:inline-block;
+     width:50px;
+     height: 50px;
+     text-align: center;
+     line-height: 45px;
+     color:#2c9cd0;
+     border-radius: 25px;
+     font-weight: bolder;
+     transition: 0.8s;
+}
+
+.slider-controller *:hover{
+     background-color: #289eec;
+     color: #ffffff;
+     cursor: pointer;
+
+}
+
+.images{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+
+}
+
+.experience{
+     display: flex;
+     background-image: url("./images/background.jpg");
+     background-size: cover;
+}
+
+.experience *{
+     flex:1;
+     padding: 10px;
+     margin-top: 40px;
+}
+
+.experience .text-wrapper p{
+     line-height: 40px;
+}
+
+.images *{
+     flex:1;
+}
+
+.plan{
+     padding: 10px;
+     margin:20px;
+     text-align: center;
+}
+
+.img-wrapper .exp-photo{
+     width: 100%;
+     height: 100%;
+     opacity: 0.5;
+
+}
+
+
+.image-container{
+     display: flex;
+     margin: 0 auto;
+     justify-content: space-around;
+}
 
 
 
